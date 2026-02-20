@@ -1,0 +1,41 @@
+# ─── SUPABASE ───────────────────────────────────────────
+# Get these from: https://app.supabase.com → your project → Settings → API
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_SERVICE_KEY=your-service-role-key-here
+
+# ─── JWT ────────────────────────────────────────────────
+# Make this a long random string — used to sign auth tokens
+# Generate one at: https://generate-secret.vercel.app/64
+JWT_SECRET=your-super-secret-jwt-key-here
+
+# ─── STRIPE ─────────────────────────────────────────────
+# Get these from: https://dashboard.stripe.com → Developers → API keys
+STRIPE_SECRET_KEY=sk_test_your-stripe-secret-key
+STRIPE_WEBHOOK_SECRET=whsec_your-webhook-secret
+
+# Stripe Price IDs — create these in Stripe dashboard
+# Products → Add Product → Add Price (recurring, monthly)
+STRIPE_PRICE_STARTER=price_starter_id_here
+STRIPE_PRICE_GROWTH=price_growth_id_here
+STRIPE_PRICE_SCALE=price_scale_id_here
+
+# ─── EMAIL (Nodemailer) ──────────────────────────────────
+# Use Gmail app password or any SMTP provider
+# Gmail: https://myaccount.google.com → Security → App passwords
+EMAIL_FROM=hello@assemblyai.app
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USER=your-gmail@gmail.com
+EMAIL_PASS=your-gmail-app-password
+
+# ─── SERVER ─────────────────────────────────────────────
+PORT=3000
+NODE_ENV=development
+
+# ─── FRONTEND URL ───────────────────────────────────────
+# Used for CORS — update to your real domain in production
+FRONTEND_URL=http://localhost:5500
+
+# ─── QR BASE URL ────────────────────────────────────────
+# The base URL that QR codes point to (your consumer-facing domain)
+QR_BASE_URL=https://assemblyai.app/s
